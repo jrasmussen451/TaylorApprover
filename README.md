@@ -1,6 +1,6 @@
 #### VerizonApprover2016 / 18.15.0 CT / 1.5.0 SPA Release (0316)
 ###### Created: 4/26/16
-###### Last Updated: 6/17/16
+###### Last Updated: 7/6/16
 
 ======== 
 
@@ -11,7 +11,7 @@ Four51: Jen R.
 ======== 
 
 ##### Github URL 
-* //github.com/Four51Repositories/VerizonApprover2016
+* //github.com/mzeher/TaylorApprover
 
 ======== 
 
