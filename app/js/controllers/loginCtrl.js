@@ -13,6 +13,7 @@ function ($scope, $sce, $route, $location, User) {
 	$scope.login = function() {
 		$scope.loginMessage = null;
 		// need to reset any error codes that might be set so we can handle new one's
+
 		angular.forEach(codes, function(c) {
 			$scope[c] = null;
 		});
@@ -35,8 +36,15 @@ function ($scope, $sce, $route, $location, User) {
 	};
 
 	var _login = function() {
+
+		/*append login username with prefix*/
+		var tempUsername = "commerce:verizon:" + $scope.credentials.Username;
+		$scope.credentials.Username = tempUsername;
+		console.log(tempUsername);
+
 		User.login($scope.credentials,
 			function(data) {
+
 				if ($scope.credentials.Email) {
 					$scope.loginMessage = data.LogonInfoSent;
 					$scope.EmailNotFoundException = false;

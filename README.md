@@ -1,6 +1,6 @@
 #### VerizonApprover2016 / 18.15.0 CT / 1.5.0 SPA Release (0316)
 ###### Created: 4/26/16
-###### Last Updated: 7/6/16
+###### Last Updated: 7/7/16
 
 ======== 
 
@@ -137,6 +137,7 @@ Four51: Jen R.
 
 `js/controllers/loginCtrl.js` 
 * change default path from catalog to orders after pw reset / line 29
+* prepend login username with prefix / lines 40-43
 * login bug fixes (specific to approver app) / lines 48-51
 
 `js/directives/approval.js` 
@@ -188,6 +189,7 @@ Four51: Jen R.
 `partials/checkOutView.html`
 * orderbuttons (desktop) / lines 5-8
 * move orderapprovals above orderdetails / line 12
+* only show billing if order is not "Awaiting Approval" / line 15
 * remove class navbar-fixed-bottom / line 17
 * orderbuttons (mobile) / lines 60-62
 

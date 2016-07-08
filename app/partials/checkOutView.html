@@ -12,7 +12,7 @@
         <orderapprovals ng-show="currentOrder.Approvals" />
         <orderdetails ng-show="hasOrderConfig" />
         <ordershipping />
-        <orderbilling ng-show="currentOrder.BillingEnabled" />
+        <orderbilling ng-show="currentOrder.BillingEnabled && currentOrder.Status !== 'AwaitingApproval'" />
 
         <div>
             <div class="view-response-message alert-success text-center" alert-show="actionMessage">
