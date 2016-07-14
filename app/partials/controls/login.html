@@ -1,6 +1,6 @@
-<div class="login">
+<section class="login">
     <div class="order-cloud-image"></div>
-    <section class="order-cloud">
+    <div class="order-cloud">
         <div id="login_box">
             <div id="login_form" class="animated bounceIn">
                 <form class="form-signin" ng-submit="login()" name="login_form">
@@ -48,9 +48,9 @@
                             <p class="alert alert-info" ng-show="showEmailHelp && (!EmailNotFoundException || !PasswordSecurityException)">
                                 If you would like to be reminded of your {{'Username' | r}} or have the option to reset your {{'Password' | r}}, please provide your email address and your log on information will be emailed to you immediately.
                             </p>
-                            <btn class="btn btn-default btn-block" ng-show="!showEmailHelp && !PasswordReset && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">
+                            <!--<btn class="btn btn-default btn-block" ng-show="!showEmailHelp && !PasswordReset && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">
                                 Need help logging on?
-                            </btn>
+                            </btn>-->
                         </div>
                         <div class="view-form-icon" ng-show="showEmailHelp">
                             <div>
@@ -99,9 +99,24 @@
                         </div>
                     </div>
                     <input ng-disabled="login_form.$invalid" class="btn btn-large btn-primary btn-block" id="451_btn_login" type="submit" value="{{buttonText}}" />
+                    <div class="login-message">
+                        <h4>Welcome Verizon Approvers</h4>
+                        <p>
+                            <strong>Product Assistance:</strong><br />
+                            VZW Help Desk<br />
+                            <a href="tel:866-256-0020">(866) 256-0200</a><br />
+                            <a href="mailto:verizonASC@taylorcommunications.com">verizonASC@taylorcommunications.com</a>
+                        </p>
+                        <p>
+                            <strong>Technical Support:</strong><br />
+                            Technical Assistance Center<br />
+                            <a href="tel:866-789-8999">(866) 789-8999</a> <em>Option 2</em><br />
+                            <a href="mailto:TAC@standardregister.com">TAC@standardregister.com</a><br />
+                            M-F 8am-8pm
+                        </p>
+                    </div>
+                </form>
             </div>
-            </form>
         </div>
-</div>
+    </div>
 </section>
-</div>

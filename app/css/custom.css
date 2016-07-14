@@ -4,7 +4,7 @@ Theme name: Approvals 2016
 Version: 1.0
 Template: Approvals
 Created: 2/25/16
-Last Updated: 6/15/16
+Last Updated: 7/14/16
 */
 
 .btn-date {
@@ -229,6 +229,17 @@ Last Updated: 6/15/16
     color: #666;
 }
 
+.login-message {
+    padding:15px 5px 0 5px;
+    border-top:1px solid #ccc;
+}
+
+.login-message h4 {
+    color:#A80309;
+    font-weight:bold;
+}
+/*login*/
+
 body {
     background-color: #ffffff;
     margin:0;
@@ -256,6 +267,15 @@ body {
 
 body {
     font-family: NHaasGroteskTXPro-55Rg, Lato, sans-serif;
+}
+
+a {
+    text-decoration:none !important;
+}
+
+a:hover,
+a:focus {
+    color: #00478e;
 }
 
 .primary-dashboard {
