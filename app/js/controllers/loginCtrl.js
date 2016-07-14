@@ -12,12 +12,12 @@ function ($scope, $sce, $route, $location, User) {
 	// build a post method for password reset
 	$scope.login = function() {
 		$scope.loginMessage = null;
-		// need to reset any error codes that might be set so we can handle new one's
+		// need to reset any error codes that might be set so we can handle new ones
 
 		angular.forEach(codes, function(c) {
 			$scope[c] = null;
 		});
-		$scope.credentials.PasswordResetToken = $location.search().token;
+		if ($location.search().token) $scope.credentials.PasswordResetToken = $location.search().token;
 		$scope.PasswordReset ? _reset() : _login();
 	};
 
